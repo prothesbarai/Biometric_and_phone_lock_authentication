@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    >
+
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/baseline_fingerprint_24"
+        android:scaleType="fitXY"
+        android:id="@+id/imageViewFinger"
+        android:layout_marginTop="120dp"
+        />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:lottie_rawRes="@raw/fingerprint"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"/>
+
+
+
+</RelativeLayout>

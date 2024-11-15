@@ -12,7 +12,7 @@ If your device supports fingerprints, biometric authentication will function; ot
 
 #### Step 1 :
 
-```bash
+```java
 
     dependencies {
 
@@ -24,7 +24,7 @@ If your device supports fingerprints, biometric authentication will function; ot
 
 #### Step 2 : 
 
-```bash
+```java
 
     private static final int REQUEST_CODE = 101010;
     private static final int REQUEST_CODE_PIN = 1234;
@@ -39,7 +39,7 @@ If your device supports fingerprints, biometric authentication will function; ot
 
 #### Step 3 :
 
-```bash
+```java
 
     BiometricManager biometricManager = BiometricManager.from(this);
         switch (biometricManager.canAuthenticate(BIOMETRIC_STRONG | DEVICE_CREDENTIAL)) {
@@ -66,7 +66,7 @@ If your device supports fingerprints, biometric authentication will function; ot
 
 #### Step 4 : 
 
-```bash
+```java
 
     executor = ContextCompat.getMainExecutor(this);
         biometricPrompt = new BiometricPrompt(MainActivity.this,executor, new BiometricPrompt.AuthenticationCallback() {
@@ -111,7 +111,7 @@ If your device supports fingerprints, biometric authentication will function; ot
 
 #### Step 5 : [ This code should be written before the last } ]
 
-```bash
+```java
 
     private void promptForPassword(){
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M){

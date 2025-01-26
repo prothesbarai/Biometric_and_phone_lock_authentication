@@ -6,8 +6,6 @@ If your device supports fingerprints, biometric authentication will function; ot
 ## Follow these procedures for implementation.
 
 
-
-
 ### Installation / Implementation
 
 
